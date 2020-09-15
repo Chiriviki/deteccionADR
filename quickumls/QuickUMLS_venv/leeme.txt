@@ -1,0 +1,10 @@
+0.- Copiar los archivos en esta carpeta. La instalacion de quickumls debe nombrarse 'quickUMLS'.
+
+1.- Crear el contenedor. En consola, posicionarse en el directorio y ejecutar
+# docker build --tag quickumls .
+
+2.- Crear el contenedor y correr servidor
+# docker run --publish 40000:40000 --name quickumls_server -t quickumls python server.py
+
+3.- El servidor quedara disponible a traves de localhost:40000
+
